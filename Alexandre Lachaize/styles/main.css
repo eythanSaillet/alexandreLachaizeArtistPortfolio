@@ -1,0 +1,218 @@
+body{
+  margin:0;
+  padding:0;
+  font-size:14px;
+  color:black;
+  background-color: #F3F3F3;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* FONTS */
+
+@font-face{
+ font-family: 'Bahnschrift';
+ src: url("../fonts/BAHNSCHRIFT 1.woff") format("woff");
+}
+@font-face{
+  font-family: 'Abril Fatface' , cursive;
+  src: url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap")
+}
+
+
+/* WELCOME OVERLAY  */
+
+.welcomeOverlay{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.welcomeOverlay_container{
+  display: inline-block;
+  margin-bottom: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcomeOverlay_nameDiv{
+  display: inline-block;
+  overflow: hidden;
+}
+
+.welcomeOverlay_nameDiv h1{
+  display: inline-block;
+  font-family: Abril Fatface;
+  font-size: 5.8vw;
+  margin: 0;
+  position: relative;
+  top: 12px;
+}
+
+.welcomeOverlay_underline{
+  height: 1px;
+  /* width: 53vw; */
+  width: 0vw;
+  background-color: black;
+  margin-top: 0.2vh;
+}
+
+/* HEADER */
+
+.header{
+  width: 93vw;
+  margin: 0 auto;
+}
+
+.header_nav{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 1.3vw;
+}
+
+.header_nav div{
+  height: 3.2vw;
+  overflow: hidden;
+}
+
+.header_nav a{
+  text-decoration: none;
+  font-family: Abril Fatface;
+  font-size: 1.5vw;
+  color: black;
+  padding: 0.1vw;
+  position: relative;
+  top:100px;
+}
+
+.header_nav_menu{
+  width: 50vw;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_nav_menu a{
+  position: absolute;
+}
+
+.header_nav_menu a:nth-child(n+2){
+  right : -50vw;
+}
+
+/* CONTAINER */
+
+.container{
+  display: flex;
+  align-items: center;
+  height: 91%;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* CONTAINER - SCROLL BAR */
+
+.container_scrollBar{
+  background-color: black;
+  border-radius: 100px;
+  width: 1px;
+  height: 60vh;
+  margin-left: 7vw;
+}
+
+.container_scrollBar_bar{
+  background-color: black;
+  border-radius: 100px;
+  width: 3px;
+  height: 16vh;
+  position: relative;
+  right: 1px;
+  top:0vh;
+}
+
+
+/* CONTAINER - MENU */
+
+.container_menu{
+  display: flex;
+  flex-flow: column;
+  margin-left: 3vw;
+}
+
+.container_menu a{
+  text-decoration: none;
+  color: #808080;
+  font-family: Abril Fatface;
+  font-size: 13vh;
+  margin: 2.5vh 0vw 2.5vh 0vw;
+}
+
+.container_menu a:first-child{
+  color: black;
+}
+
+/* CONTAINER - ART PIC */
+
+.container_artPic{
+  background: #F3F3F3;
+  width: 90%;
+  height: 90%;
+  margin: 2vh 3vw 2vh 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container_artPic>div{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container_artPic>div>div{
+  background: white;
+  padding: 2vw;
+  display: inline-block;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.16);
+  position: relative;
+}
+
+.container_artPic img{
+  width: 10vw;
+}
+
+.container_artPic_a{
+margin-top: 20vh;
+}
+
+.container_artPic_b{
+margin-bottom: 20vh;
+}
+
+.container_artPic_c{
+margin-top: 20vh;
+}
+
+.container_artPic_paint .container_artPic_a{
+  top:-100vh
+}
+.container_artPic_paint .container_artPic_b{
+  top:100vh
+}
+.container_artPic_paint .container_artPic_c{
+  top:-100vh
+}

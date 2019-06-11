@@ -1,0 +1,158 @@
+body{
+  margin:0;
+  padding:0;
+  font-size:14px;
+  color:black;
+  background-color: #F3F3F3;
+  width: 100vw;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+/* HEADER */
+
+.header{
+  width: 93vw;
+  margin: 0 auto;
+  position: fixed;
+  left: 3.5vw;
+  background: #F3F3F3;
+  z-index: 2;
+}
+
+.header_nav{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 1.3vw;
+}
+
+.header_nav div{
+  height: 3.2vw;
+  overflow: hidden;
+}
+
+.header_nav a{
+  text-decoration: none;
+  font-family: Abril Fatface;
+  font-size: 1.5vw;
+  color: black;
+  padding: 0.1vw;
+  position: relative;
+}
+
+.header_nav_menu{
+  width: 50vw;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_nav_menu a{
+  position: absolute;
+}
+
+.header_nav_menu a:nth-child(n+2){
+  right : -50vw;
+}
+
+.header_underline{
+  height: 1px;
+  width: 93vw;
+  background-color: black;
+  margin-top: 0.2vh;
+}
+
+/* CONTAINER */
+
+.fixedInterface{
+  padding-top: 4.5vw;
+  height: 91%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* CONTAINER - SCROLL BAR */
+
+.fixedInterface_scrollBar{
+  background-color: black;
+  border-radius: 100px;
+  width: 1px;
+  height: 60vh;
+  margin-left: 7vw;
+  position: fixed;
+}
+
+.fixedInterface_scrollBar_bar{
+  background-color: black;
+  border-radius: 100px;
+  width: 3px;
+  height: 16vh;
+  position: relative;
+  right: 1px;
+  top:0vh;
+
+}
+
+/* CONTAINER - ART WALL */
+
+.container{
+  width: 100%;
+  position: absolute;
+  top:0;
+}
+
+.container_artWall{
+  width: 80vw;
+  padding: 10vh 0 0  14vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.container_artWall_columnB{
+  padding-top: 30vh;
+}
+
+
+.container_artWall div div{
+  padding-bottom: 15vh;
+  width: 23vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_artWall img{
+  padding: 3vw;
+  width: 12vw;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.16);
+  transition: all 0.2s ease-in-out;
+}
+
+.container_artWall img:hover{
+  padding: 2.8vw;
+  width: 12.8vw;
+
+}
+
+.container_artWall_columnA div{
+  padding-top: 20vh;
+}
+
+.container_artWall_columnB div{
+  padding-top: 40vh;
+  padding-bottom: 20vh;
+}
+
+.container_artWall_columnC div{
+  padding-top: 20vh;
+}
