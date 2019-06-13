@@ -18,12 +18,6 @@ let customScrollBar = {
     let scrollBarPosVh
     let scrollBarHeightVh
 
-    // rellaxSize = customScrollBar.rellaxSizeMarker.getAttribute('style')
-    //
-    // for (var i = 0; rellaxSize.length; i++) {
-    //   console.log(rellaxSize[i])
-    // }
-
     window.addEventListener('resize',function(){
       documentHeight = customScrollBar.pageSizeMarker.offsetHeight-window.innerHeight+803
     })
@@ -44,3 +38,35 @@ let customScrollBar = {
   },
 }
 customScrollBar.animation()
+
+let artOverlay = {
+  overlay : document.querySelector('.artOverlay'),
+  enterItem : document.querySelectorAll('.container_artWall img'),
+  exitItem : document.querySelector('.artOverlay_cancel'),
+
+  // HIDDEN BACKGROUND
+
+  header : document.querySelector('.header'),
+  interface : document.querySelector('.fixedInterface'),
+  container : document.querySelector('.container'),
+
+  display : function(){
+    artOverlay.exitItem.addEventListener('click',function(){
+      TweenMax.to(artOverlay.overlay,1,{ease: Power3.easeInOut, x:"100vw"})
+      TweenMax.to(artOverlay.header,1,{ease: Power3.easeInOut, opacity:1})
+      TweenMax.to(artOverlay.interface,1,{ease: Power3.easeInOut, opacity:1})
+      TweenMax.to(artOverlay.container,1,{ease: Power3.easeInOut, opacity:1})
+    })
+
+    artOverlay.enterItem.forEach(function(e){
+      e.addEventListener('click',function(){
+        TweenMax.to(artOverlay.overlay,1,{ease: Power3.easeInOut, x:"0vw"})
+        TweenMax.to(artOverlay.header,1,{ease: Power3.easeInOut, opacity:0})
+        TweenMax.to(artOverlay.interface,1,{ease: Power3.easeInOut, opacity:0})
+        TweenMax.to(artOverlay.container,1,{ease: Power3.easeInOut, opacity:0})
+      })
+    })
+  },
+
+}
+artOverlay.display()

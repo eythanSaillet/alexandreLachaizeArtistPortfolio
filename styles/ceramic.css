@@ -2,14 +2,27 @@ body{
   margin:0;
   padding:0;
   font-size:14px;
+  font-family: Bahnschrift;
   color:black;
   background-color: #F3F3F3;
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 body::-webkit-scrollbar{
   display: none;
+}
+
+/* FONTS */
+
+@font-face{
+ font-family: 'Bahnschrift';
+ src: url("../fonts/Bahnschrift.woff") format("woff");
+}
+@font-face{
+  font-family: 'Abril Fatface' , cursive;
+  src: url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap")
 }
 
 /* HEADER */
@@ -115,11 +128,9 @@ body::-webkit-scrollbar{
   flex-wrap: wrap;
 }
 
-
 .container_artWall_columnB{
   padding-top: 30vh;
 }
-
 
 .container_artWall div div{
   padding-bottom: 15vh;
@@ -155,4 +166,185 @@ body::-webkit-scrollbar{
 
 .container_artWall_columnC div{
   padding-top: 20vh;
+}
+
+/* ART OVERLAY */
+
+.artOverlay{
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.16);
+  position: fixed;
+  top:5vh;
+  left:2.5vw;
+  height: 90vh;
+  width: 97.5vw;
+  z-index: 3;
+  display: flex;
+  transform: translate(100vw);
+}
+
+/* ART OVERLAY - NAV */
+
+.artOverlay_nav{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 90vh;
+  width: 7vw;
+}
+
+div[class^="artOverlay_nav_arrow"]{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 10.5vh;
+}
+
+.artOverlay_nav img{
+  width: 3.5vh;
+}
+
+.artOverlay_nav img:nth-child(1){
+  transform: rotate(180deg);
+}
+
+.artOverlay_nav_arrowPrev{
+  margin-top: 2vh;
+}
+.artOverlay_nav_arrowNext{
+  margin-bottom: 2vh;
+}
+
+.artOverlay_nav p{
+  font-size: 2.1vh;
+  font-family: Bahnschrift;
+  transform: rotate(-90deg);
+}
+
+.artOverlay_nav p:hover{
+  cursor: default;
+}
+
+.artOverlay_nav_line{
+  height: 55vh;
+  width: 1px;
+  background: black;
+}
+
+/* ART OVERLAY - INFO */
+
+.artOverlay_info{
+  width: 47vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left:-4vw;
+}
+
+.artOverlay_info p{
+  margin: 1vw;
+}
+
+.artOverlay_info_title{
+  font-size: 65px;
+  font-family: Abril Fatface;
+}
+
+.artOverlay_info_text{
+  font-size: 17px;
+  width: 36vw;
+}
+
+.artOverlay_info_size{
+  font-size: 35px;
+  color: grey;
+  margin: 0 0 0 0;
+  padding-bottom: 4vh;
+}
+
+/* ART OVERLAY - PIC */
+
+.artOverlay_pic{
+  width: 36vw;
+  height : 83vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+}
+
+.artOverlay_pic_container img{
+  height: 68vh;
+}
+
+.artOverlay_pic_nav{
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.artOverlay_pic_nav img{
+  height: 17px;
+  padding-top: 9px;
+}
+
+.artOverlay_pic_nav img:nth-child(1){
+  transform: rotate(90deg);
+}
+
+.artOverlay_pic_nav img:nth-child(3){
+  transform: rotate(-90deg);
+}
+
+.artOverlay_pic_nav_numbers span{
+  font-size: 20px;
+}
+
+/* ART OVERLAY - CANCEL */
+
+.artOverlay_cancel{
+  width: 12vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.artOverlay_cancel>div[class^="artOverlay_cancel_container"]{
+  position: relative;
+  height: 69px;
+  position: relative;
+  right:2.5vw;
+  top:30px;
+}
+
+.artOverlay_cancel_container_up{
+  width: 100px;
+  height : 3px;
+  border-radius: 100px;
+  background: black;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.artOverlay_cancel_container_down{
+  width: 100px;
+  height : 3px;
+  border-radius: 50px;
+  background: black;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.artOverlay_cancel:hover .artOverlay_cancel_container_up{
+  transform: translateY(34px) rotate(45deg);
+}
+
+.artOverlay_cancel:hover .artOverlay_cancel_container_down{
+  transform: translateY(-34px) rotate(-45deg);
 }
