@@ -90,6 +90,20 @@ body::-webkit-scrollbar{
   justify-content: space-between;
 }
 
+/* CONTAINER - STYLE NAV */
+
+.container_styleNav{
+  position: absolute;
+  display: flex;
+  top: 20vh;
+  left: 20vw;
+}
+
+.container_styleNav p{
+  width: 45vw;
+  font-size: 6.5vw;
+}
+
 /* CONTAINER - SCROLL BAR */
 
 .fixedInterface_scrollBar{
@@ -122,7 +136,7 @@ body::-webkit-scrollbar{
 
 .container_artWall{
   width: 80vw;
-  padding: 10vh 0 0  14vw;
+  padding: 90vh 0 0  14vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -212,23 +226,10 @@ div[class^="artOverlay_nav_arrow"]{
 }
 
 .artOverlay_nav_arrowPrev{
-  width: 5vw;
-  padding: 1vw;
   margin-top: 2vh;
-  transition: all 0.2s ease-in-out;
 }
-.artOverlay_nav_arrowPrev:hover{
-  transform: translateY(-5px);
-}
-
 .artOverlay_nav_arrowNext{
-  width: 5vw;
-  padding: 1vw;
   margin-bottom: 2vh;
-  transition: all 0.2s ease-in-out;
-}
-.artOverlay_nav_arrowNext:hover{
-  transform: translateY(5px);
 }
 
 .artOverlay_nav p{
@@ -255,10 +256,11 @@ div[class^="artOverlay_nav_arrow"]{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-left:-4vw;
 }
 
 .artOverlay_info p{
-  margin: 1vw 1vw 1vw -4vw;
+  margin: 1vw;
 }
 
 .artOverlay_info_title{
@@ -296,35 +298,22 @@ div[class^="artOverlay_nav_arrow"]{
 }
 
 .artOverlay_pic_nav{
-  width: 230px;
+  width: 170px;
   display: flex;
   justify-content: space-between;
 }
 
 .artOverlay_pic_nav img{
   height: 17px;
+  padding-top: 9px;
 }
 
 .artOverlay_pic_nav img:nth-child(1){
   transform: rotate(90deg);
-  padding: 2vw;
-  transition: all 0.2s ease-in-out;
-}
-.artOverlay_pic_nav img:nth-child(1):hover{
-  transform: translateX(-5px) rotate(90deg);
 }
 
 .artOverlay_pic_nav img:nth-child(3){
   transform: rotate(-90deg);
-  padding: 2vw;
-  transition: all 0.2s ease-in-out;
-}
-.artOverlay_pic_nav img:nth-child(3):hover{
-  transform: translateX(5px) rotate(-90deg);
-}
-
-.artOverlay_pic_nav_numbers{
-  padding-top: 23px;
 }
 
 .artOverlay_pic_nav_numbers span{
@@ -355,7 +344,6 @@ div[class^="artOverlay_nav_arrow"]{
   border-radius: 100px;
   background: black;
   transform: rotate(45deg);
-  transform: translateY(34px) rotate(45deg);
   transition: all 0.3s ease-in-out;
 }
 
@@ -365,14 +353,13 @@ div[class^="artOverlay_nav_arrow"]{
   border-radius: 50px;
   background: black;
   transform: rotate(-45deg);
-  transform: translateY(-34px) rotate(-45deg);
   transition: all 0.3s ease-in-out;
 }
 
 .artOverlay_cancel:hover .artOverlay_cancel_container_up{
-  transform: translateY(1px) rotate(45deg);
+  transform: translateY(34px) rotate(45deg);
 }
 
 .artOverlay_cancel:hover .artOverlay_cancel_container_down{
-  transform: translateY(1px) rotate(-45deg);
+  transform: translateY(-34px) rotate(-45deg);
 }

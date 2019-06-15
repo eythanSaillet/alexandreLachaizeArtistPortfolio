@@ -19,7 +19,7 @@ let customScrollBar = {
     let scrollBarHeightVh
 
     window.addEventListener('resize',function(){
-      documentHeight = customScrollBar.pageSizeMarker.offsetHeight-window.innerHeight+803
+      documentHeight = customScrollBar.pageSizeMarker.offsetHeight-window.innerHeight+372
     })
 
     window.addEventListener('scroll',function(){
@@ -39,13 +39,12 @@ let customScrollBar = {
 }
 customScrollBar.animation()
 
-let artOverlay = {
+artOverlay = {
   overlay : document.querySelector('.artOverlay'),
   enterItem : document.querySelectorAll('.container_artWall img'),
   exitItem : document.querySelector('.artOverlay_cancel'),
 
-  // HIDDEN BACKGROUND
-
+  // HIDDEN BACKGROUND DOM VAR
   header : document.querySelector('.header'),
   interface : document.querySelector('.fixedInterface'),
   container : document.querySelector('.container'),
@@ -60,6 +59,10 @@ let artOverlay = {
 
     artOverlay.enterItem.forEach(function(e){
       e.addEventListener('click',function(){
+
+        data = e.getAttribute("data")
+        pieceDisplay.infoDisplay()
+
         TweenMax.to(artOverlay.overlay,1,{ease: Power3.easeInOut, x:"0vw"})
         TweenMax.to(artOverlay.header,1,{ease: Power3.easeInOut, opacity:0})
         TweenMax.to(artOverlay.interface,1,{ease: Power3.easeInOut, opacity:0})
