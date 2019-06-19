@@ -264,6 +264,7 @@ div[class^="artOverlay_nav_arrow"]{
 .artOverlay_info_title{
   font-size: 65px;
   font-family: Abril Fatface;
+  width: 35vw;
 }
 
 .artOverlay_info_text{
@@ -292,7 +293,8 @@ div[class^="artOverlay_nav_arrow"]{
 }
 
 .artOverlay_pic_container img{
-  height: 68vh;
+  max-height: 68vh;
+  max-width: 30vw;
 }
 
 .artOverlay_pic_nav{

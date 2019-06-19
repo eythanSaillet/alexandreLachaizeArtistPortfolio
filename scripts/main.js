@@ -25,7 +25,7 @@ let welcomeOverlay = {
     }, 200);
 
     setTimeout(function () {
-      TweenMax.to(welcomeOverlay.name,0.5,{ease: Power3.easeInOut,top:100})
+      TweenMax.to(welcomeOverlay.name,0.7,{ease: Power3.easeInOut,top:200})
     }, 2900);
 
     setTimeout(function () {

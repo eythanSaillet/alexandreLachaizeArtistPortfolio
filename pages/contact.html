@@ -25,6 +25,26 @@
       </p>
     </form>
   </body>
+  <?php
+
+      ini_set( 'display_errors', 1 );
+
+      error_reporting( E_ALL );
+
+      $from = "eythan.saillet@gmail.com";
+
+      $to = "eythan.saillet@gmail.com";
+
+      $subject = "Vérification PHP mail";
+
+      $message = "PHP mail marche";
+
+      $headers = "From:" . $from;
+
+      mail($to,$subject,$message, $headers);
+
+      echo "L'email a été envoyé.";
+  ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   <script src="../scripts/contact.js"></script>
 </html>

@@ -6,7 +6,7 @@ let customScrollBar = {
 
 
   animation : function(){
-    let documentHeight = customScrollBar.pageSizeMarker.offsetHeight-window.innerHeight+803
+    let documentHeight = customScrollBar.pageSizeMarker.offsetHeight-window.innerHeight
     let scrollBarHeight
     let documentPos
     let scrollBarPos
@@ -19,7 +19,7 @@ let customScrollBar = {
     let scrollBarHeightVh
 
     window.addEventListener('resize',function(){
-      documentHeight = customScrollBar.pageSizeMarker.offsetHeight-window.innerHeight+372
+      documentHeight = customScrollBar.pageSizeMarker.offsetHeight-window.innerHeight
     })
 
     window.addEventListener('scroll',function(){
