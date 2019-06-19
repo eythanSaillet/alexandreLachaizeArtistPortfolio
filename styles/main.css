@@ -216,3 +216,33 @@ margin-top: 20vh;
 .container_artPic_paint .container_artPic_c{
   top:-100vh
 }
+
+.container_artPic_other .container_artPic_a{
+  top:-100vh
+}
+.container_artPic_other .container_artPic_b{
+  top:100vh
+}
+.container_artPic_other .container_artPic_c{
+  top:-100vh
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 800px){
+
+  .header_nav{
+    margin-top: 5vw;
+  }
+
+  .header_nav div{
+    height: 5vw;
+  }
+
+  .header_nav a{
+    font-size: 9vw;
+  }
+
+
+}

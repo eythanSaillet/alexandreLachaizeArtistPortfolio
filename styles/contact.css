@@ -1,0 +1,92 @@
+body{
+  background: #F3F3F3;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* FONTS */
+
+@font-face{
+ font-family: 'Bahnschrift';
+ src: url("../fonts/Bahnschrift.woff") format("woff");
+}
+@font-face{
+  font-family: 'Abril Fatface' , cursive;
+  src: url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap")
+}
+
+/* FORM */
+
+form{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+p{
+  display: flex;
+  flex-flow: column;
+  width: 45vw;
+  font-size: 6vw;
+  font-family: Abril Fatface;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+label{
+  margin-bottom: 2vh;
+  margin-left: 0.3vw;
+}
+
+input{
+  border-radius: 100px;
+  border: 1px solid #707070;
+  height: 6vw;
+  font-size: 2vw;
+  font-family: Bahnschrift;
+  padding-left: 1.5vw;
+}
+input:focus{
+  outline: none;
+}
+
+textarea{
+  border-radius: 50px;
+  border: 1px solid #707070;
+  height: 270px;
+  resize: none;
+  font-size: 2vw;
+  font-family: Bahnschrift;
+  padding: 1.5vw 1vw 1.5vw 2vw;
+}
+textarea:focus{
+  outline: none;
+}
+
+img{
+  top: 0;
+  left:0;
+  width: 3vw;
+  margin-top: 2vh;
+  margin-left: -0.5vw;
+  padding: 1.5vw;
+  transition: all 0.3s ease-in-out;
+}
+img:hover{
+  transform: translateY(2vh);
+}
+
+.email{
+  transform: translateY(27vh);
+}
+
+.name{
+  transform: translateY(100vh);
+}
+
+.message{
+  transform: translateY(100vh);
+}

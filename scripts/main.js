@@ -1,3 +1,4 @@
+console.log(screen.width)
 let welcomeOverlay = {
 
   // Welcome Overlay const
@@ -29,7 +30,12 @@ let welcomeOverlay = {
 
     setTimeout(function () {
       welcomeOverlay.underline.style.position = "relative"
-      TweenMax.to(welcomeOverlay.underline,0.7,{ease: Power3.easeInOut, bottom:"42.7vh"})
+      if (screen.width>800) {
+        TweenMax.to(welcomeOverlay.underline,0.7,{ease: Power3.easeInOut, bottom:"42.7vh"})
+      }
+      if (screen.width<800) {
+        TweenMax.to(welcomeOverlay.underline,0.7,{ease: Power3.easeInOut, bottom:"38vh"})
+      }
       TweenMax.to(welcomeOverlay.underline,0.7,{ease: Power3.easeInOut, width:"93vw"})
     }, 3100);
 
@@ -77,15 +83,20 @@ let containerMenu = {
 
 
       if (containerMenu.scrollBar.style.top != "0vh") {
-        TweenMax.to(".container_artPic_paint .container_artPic_a",1,{ease: Power3.easeInOut, top:"100vh"})
-        TweenMax.to(".container_artPic_paint .container_artPic_b",1,{ease: Power3.easeInOut, top:"-100vh"})
-        TweenMax.to(".container_artPic_paint .container_artPic_c",1,{ease: Power3.easeInOut, top:"100vh"})
+        TweenMax.to(".container_artPic_paint .container_artPic_a",1,{ease: Power3.easeInOut, top:"-100vh"})
+        TweenMax.to(".container_artPic_paint .container_artPic_b",1,{ease: Power3.easeInOut, top:"100vh"})
+        TweenMax.to(".container_artPic_paint .container_artPic_c",1,{ease: Power3.easeInOut, top:"-100vh"})
+
+        TweenMax.to(".container_artPic_other .container_artPic_a",1,{ease: Power3.easeInOut, top:"-100vh"})
+        TweenMax.to(".container_artPic_other .container_artPic_b",1,{ease: Power3.easeInOut, top:"100vh"})
+        TweenMax.to(".container_artPic_other .container_artPic_c",1,{ease: Power3.easeInOut, top:"-100vh"})
 
         TweenMax.to(".container_artPic_ceramic .container_artPic_a",1,{ease: Power3.easeInOut, top:0})
         TweenMax.to(".container_artPic_ceramic .container_artPic_b",1,{ease: Power3.easeInOut, top:0})
         TweenMax.to(".container_artPic_ceramic .container_artPic_c",1,{ease: Power3.easeInOut, top:0})
       }
     })
+
     containerMenu.title[1].addEventListener("mouseover",function(){
       TweenMax.to(containerMenu.title[0],0.2,{ease: Power3.easeInOut, color:"#808080"})
       TweenMax.to(containerMenu.title[1],0.2,{ease: Power3.easeInOut, color:"black"})
@@ -98,19 +109,40 @@ let containerMenu = {
         TweenMax.to(".container_artPic_paint .container_artPic_b",1,{ease: Power3.easeInOut, top:0})
         TweenMax.to(".container_artPic_paint .container_artPic_c",1,{ease: Power3.easeInOut, top:0})
 
+        TweenMax.to(".container_artPic_other .container_artPic_a",1,{ease: Power3.easeInOut, top:"-100vh"})
+        TweenMax.to(".container_artPic_other .container_artPic_b",1,{ease: Power3.easeInOut, top:"100vh"})
+        TweenMax.to(".container_artPic_other .container_artPic_c",1,{ease: Power3.easeInOut, top:"-100vh"})
+
         TweenMax.to(".container_artPic_ceramic .container_artPic_a",1,{ease: Power3.easeInOut, top:"-100vh"})
         TweenMax.to(".container_artPic_ceramic .container_artPic_b",1,{ease: Power3.easeInOut, top:"100vh"})
         TweenMax.to(".container_artPic_ceramic .container_artPic_c",1,{ease: Power3.easeInOut, top:"-100vh"})
 
       }
     })
+
     containerMenu.title[2].addEventListener("mouseover",function(){
       TweenMax.to(containerMenu.title[0],0.2,{ease: Power3.easeInOut, color:"#808080"})
       TweenMax.to(containerMenu.title[1],0.2,{ease: Power3.easeInOut, color:"#808080"})
       TweenMax.to(containerMenu.title[2],0.2,{ease: Power3.easeInOut, color:"black"})
 
       TweenMax.to(containerMenu.scrollBar,0.5,{ease: Power3.easeInOut, top:"45vh"})
+
+      if (containerMenu.scrollBar.style.top != "45vh") {
+        TweenMax.to(".container_artPic_other .container_artPic_a",1,{ease: Power3.easeInOut, top:0})
+        TweenMax.to(".container_artPic_other .container_artPic_b",1,{ease: Power3.easeInOut, top:0})
+        TweenMax.to(".container_artPic_other .container_artPic_c",1,{ease: Power3.easeInOut, top:0})
+
+        TweenMax.to(".container_artPic_paint .container_artPic_a",1,{ease: Power3.easeInOut, top:"-100vh"})
+        TweenMax.to(".container_artPic_paint .container_artPic_b",1,{ease: Power3.easeInOut, top:"100vh"})
+        TweenMax.to(".container_artPic_paint .container_artPic_c",1,{ease: Power3.easeInOut, top:"-100vh"})
+
+        TweenMax.to(".container_artPic_ceramic .container_artPic_a",1,{ease: Power3.easeInOut, top:"-100vh"})
+        TweenMax.to(".container_artPic_ceramic .container_artPic_b",1,{ease: Power3.easeInOut, top:"100vh"})
+        TweenMax.to(".container_artPic_ceramic .container_artPic_c",1,{ease: Power3.easeInOut, top:"-100vh"})
+
+      }
     })
   }
 }
+
 containerMenu.animation()

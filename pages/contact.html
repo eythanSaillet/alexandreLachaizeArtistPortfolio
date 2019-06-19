@@ -4,25 +4,27 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
-    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/contact.css">
   </head>
   <body>
-    <div class="header">
-      <nav class = "header_nav">
-        <div class="header_nav_name">
-          <a href="file:///Users/eythansaillet/Desktop/Cours/De%CC%81veloppement/welcomeOverlay/index.html">Alexandre Lachaize</a>
-        </div>
-        <div class="header_nav_menu">
-          <a href="#">Menu</a>
-          <a href="#">Infos</a>
-          <a href="#">Contact</a>
-          <a href="#">Oeuvres</a>
-        </div>
-      </nav>
-      <div class="header_underline">
-      </div>
-    </div>
+    <form method="post" action="traitement.php">
+      <p class="email">
+        <label for="email">e-mail</label>
+        <input type="email" id="email">
+        <img src="../images/arrow.png" alt="">
+      </p>
+      <p class="name">
+        <label for="name">nom</label>
+        <input type="text" id="name">
+        <img src="../images/arrow.png" alt="">
+      </p>
+      <p class="message">
+        <label for="message">message</label>
+        <textarea name="ameliorer" id="message"></textarea>
+        <img src="../images/arrow.png" alt="">
+      </p>
+    </form>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-  <script src="../scripts/common.js" charset="utf-8"></script>
+  <script src="../scripts/contact.js"></script>
 </html>
