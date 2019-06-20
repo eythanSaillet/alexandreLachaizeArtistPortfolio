@@ -1,4 +1,3 @@
-console.log(screen.width)
 let welcomeOverlay = {
 
   // Welcome Overlay const
@@ -41,6 +40,7 @@ let welcomeOverlay = {
 
     setTimeout(function () {
       TweenMax.to('nav a',0.8,{ease: Power3.easeInOut,top:0})
+      TweenMax.to('nav p',0.8,{ease: Power3.easeInOut,top:0})
     }, 3400);
 
     setTimeout(function () {

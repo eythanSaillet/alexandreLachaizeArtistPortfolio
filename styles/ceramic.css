@@ -22,7 +22,7 @@ body::-webkit-scrollbar{
 }
 @font-face{
   font-family: 'Abril Fatface' , cursive;
-  src: url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap")
+  src: url("../fonts/AbrilFatface-Regular.ttf") format("ttf");
 }
 
 /* HEADER */
@@ -46,6 +46,18 @@ body::-webkit-scrollbar{
 .header_nav div{
   height: 3.2vw;
   overflow: hidden;
+}
+
+.header_nav_menu p{
+  font-family: Abril Fatface;
+  font-size: 1.5vw;
+  color: black;
+  padding: 0.1vw;
+  position: relative;
+  margin: 0;
+}
+.header_nav_menu p:hover{
+  cursor: pointer;
 }
 
 .header_nav a{
@@ -377,4 +389,75 @@ div[class^="artOverlay_nav_arrow"]{
 
 .artOverlay_cancel:hover .artOverlay_cancel_container_down{
   transform: translateY(1px) rotate(-45deg);
+}
+
+
+
+@media screen and (max-width: 1000px){
+
+  /* HEADER */
+
+  .header_nav{
+    margin-top: 3vh;
+  }
+
+  .header_underline{
+    margin-top: 2.5vh;
+  }
+
+  .header_nav p{
+    font-size: 3.5vw;
+  }
+
+  .header_nav div{
+    height: 5vw;
+  }
+
+  .header_nav a{
+    font-size: 3.5vw;
+  }
+
+  .fixedInterface{
+    display:none;
+  }
+
+  /* ART WALL */
+
+  .container_artWall{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex-wrap: nowrap;
+
+  }
+
+  .container_artWall_columnA{
+    margin-top: 20vh;
+  }
+
+  div[class^="container_artWall_column"]{
+    padding: 0 0 20vh 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  div[class^="container_artWall_column"] div{
+    width: 60vw;
+    margin: 0 0 0 0;
+    padding: 0;
+    height: 120vh;
+  }
+
+  div[class^="container_artWall_column"] div img{
+    width: 60vw;
+  }
+  div[class^="container_artWall_column"] div img:hover{
+    width: 60vw;
+  }
+
 }

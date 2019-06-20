@@ -5,46 +5,27 @@
     <title></title>
     <meta name="description" content="">
     <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="icon" type="image/png" href="../images/logo.png"/>
   </head>
   <body>
-    <form method="post" action="traitement.php">
+    <form method="post" action="../scripts/sendMail.php">
       <p class="email">
         <label for="email">e-mail</label>
-        <input type="email" id="email">
+        <input type="email" id="email" name="email">
         <img src="../images/arrow.png" alt="">
       </p>
       <p class="name">
         <label for="name">nom</label>
-        <input type="text" id="name">
+        <input type="text" id="name" name="name">
         <img src="../images/arrow.png" alt="">
       </p>
       <p class="message">
         <label for="message">message</label>
-        <textarea name="ameliorer" id="message"></textarea>
-        <img src="../images/arrow.png" alt="">
+        <textarea name="message" id="message"></textarea>
+        <input type="submit" value="Envoyer">
       </p>
     </form>
   </body>
-  <?php
-
-      ini_set( 'display_errors', 1 );
-
-      error_reporting( E_ALL );
-
-      $from = "eythan.saillet@gmail.com";
-
-      $to = "eythan.saillet@gmail.com";
-
-      $subject = "Vérification PHP mail";
-
-      $message = "PHP mail marche";
-
-      $headers = "From:" . $from;
-
-      mail($to,$subject,$message, $headers);
-
-      echo "L'email a été envoyé.";
-  ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   <script src="../scripts/contact.js"></script>
 </html>

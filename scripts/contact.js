@@ -25,7 +25,7 @@ let form = {
       TweenMax.to(form.emailDiv,1,{ease: Power3.easeInOut, y:"-100vh"})
       TweenMax.to(form.button2,1,{ease: Power3.easeInOut, opacity:0})
       TweenMax.to(form.nameDiv,1,{ease: Power3.easeInOut, y:"-100vh"})
-      TweenMax.to(form.messageDiv,1,{ease: Power3.easeInOut, y:"-73vh"})
+      TweenMax.to(form.messageDiv,1,{ease: Power3.easeInOut, y:"-80vh"})
     })
 
   },

@@ -13,7 +13,7 @@ body{
 }
 @font-face{
   font-family: 'Abril Fatface' , cursive;
-  src: url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap")
+  src: url("../fonts/AbrilFatface-Regular.ttf") format("ttf");
 }
 
 /* FORM */
@@ -51,6 +51,17 @@ input{
 }
 input:focus{
   outline: none;
+}
+
+.message input{
+  height: 4vw;
+  width: 12vw;
+  padding-right: 1vw;
+  margin-top: 3vh;
+  margin: 5vh auto;
+}
+.message input:hover{
+  background-color: #F3F3F3;
 }
 
 textarea{

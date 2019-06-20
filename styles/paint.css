@@ -22,7 +22,7 @@ body::-webkit-scrollbar{
 }
 @font-face{
   font-family: 'Abril Fatface' , cursive;
-  src: url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap")
+  src: url("../fonts/AbrilFatface-Regular.ttf") format("ttf");
 }
 
 /* HEADER */
@@ -46,6 +46,18 @@ body::-webkit-scrollbar{
 .header_nav div{
   height: 3.2vw;
   overflow: hidden;
+}
+
+.header_nav_menu p{
+  font-family: Abril Fatface;
+  font-size: 1.5vw;
+  color: black;
+  padding: 0.1vw;
+  position: relative;
+  margin: 0;
+}
+.header_nav_menu p:hover{
+  cursor: pointer;
 }
 
 .header_nav a{
