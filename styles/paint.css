@@ -21,8 +21,9 @@ body::-webkit-scrollbar{
  src: url("../fonts/Bahnschrift.woff") format("woff");
 }
 @font-face {
-  font-family: 'Abril Fatface';
+  font-family: 'Abril';
   src: local('Abril Fatface'), local('AbrilFatface-Regular'),
+       url('../fonts/AbrilFatface-Regular.otf') format('otf'),
        url('../fonts/abril-fatface-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/abril-fatface-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -51,7 +52,7 @@ body::-webkit-scrollbar{
 }
 
 .header_nav_menu p{
-  font-family: AbrilFatface-Regular;
+  font-family: 'Abril';
   font-size: 1.5vw;
   color: black;
   padding: 0.1vw;
@@ -64,7 +65,7 @@ body::-webkit-scrollbar{
 
 .header_nav a{
   text-decoration: none;
-  font-family: Abril Fatface;
+  font-family: 'Abril';
   font-size: 1.5vw;
   color: black;
   padding: 0.1vw;
@@ -120,7 +121,7 @@ body::-webkit-scrollbar{
 
 .container h2{
   font-size: 15vw;
-  font-family: AbrilFatface-Regular;
+  font-family: 'Abril';
   margin: 0;
   display: inline-block;
   color: darkgrey;
@@ -303,7 +304,7 @@ div[class^="artOverlay_nav_arrow"]{
 
 .artOverlay_info_title{
   font-size: 65px;
-  font-family: AbrilFatface-Regular;
+  font-family: 'Abril';
   width: 35vw;
 }
 
@@ -451,7 +452,7 @@ div[class^="artOverlay_nav_arrow"]{
 
 .infosOverlay_info_title{
   font-size: 65px;
-  font-family: AbrilFatface-Regular;
+  font-family: 'Abril';
   width: 35vw;
 }
 
