@@ -17,13 +17,7 @@ body{
  src: url("../fonts/Bahnschrift.woff") format("woff");
 }
 
-@font-face {
-  font-family: 'Abril';
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'),
-       url('../fonts/AbrilFatface-Regular.otf') format('otf'),
-       url('../fonts/abril-fatface-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/abril-fatface-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+
 
 /* WELCOME OVERLAY  */
 
@@ -55,7 +49,7 @@ body{
 
 .welcomeOverlay_nameDiv h1{
   display: inline-block;
-  font-family: 'Abril';
+  font-family: 'Abril Fatface', cursive;
   font-weight: 400;
   font-size: 5.8vw;
   margin: 0;
