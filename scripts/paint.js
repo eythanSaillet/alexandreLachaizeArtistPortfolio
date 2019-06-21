@@ -6,7 +6,7 @@ let customScrollBar = {
 
 
   animation : function(){
-    let documentHeight = customScrollBar.pageSizeMarker.offsetHeight-window.innerHeight+803
+    let documentHeight = customScrollBar.pageSizeMarker.offsetHeight-window.innerHeight
     let scrollBarHeight
     let documentPos
     let scrollBarPos
@@ -19,7 +19,7 @@ let customScrollBar = {
     let scrollBarHeightVh
 
     window.addEventListener('resize',function(){
-      documentHeight = customScrollBar.pageSizeMarker.offsetHeight-window.innerHeight+372
+      documentHeight = customScrollBar.pageSizeMarker.offsetHeight-window.innerHeight
     })
 
     window.addEventListener('scroll',function(){
@@ -73,3 +73,33 @@ artOverlay = {
 
 }
 artOverlay.display()
+
+
+infosOverlay = {
+  overlay : document.querySelector('.infosOverlay'),
+  enterItem : document.querySelector('.header_nav_menu_infos'),
+  exitItem : document.querySelector('.infosOverlay_cancel'),
+
+  // HIDDEN BACKGROUND DOM VAR
+  header : document.querySelector('.header'),
+  interface : document.querySelector('.fixedInterface'),
+  container : document.querySelector('.container'),
+
+  display : function(){
+    infosOverlay.exitItem.addEventListener('click',function(){
+      TweenMax.to(infosOverlay.overlay,1,{ease: Power3.easeInOut, x:"100vw"})
+      TweenMax.to(infosOverlay.header,1,{ease: Power3.easeInOut, opacity:1})
+      TweenMax.to(infosOverlay.interface,1,{ease: Power3.easeInOut, opacity:1})
+      TweenMax.to(infosOverlay.container,1,{ease: Power3.easeInOut, opacity:1})
+    })
+
+    infosOverlay.enterItem.addEventListener('click', function(){
+      TweenMax.to(infosOverlay.overlay,1,{ease: Power3.easeInOut, x:"0vw"})
+      TweenMax.to(infosOverlay.header,1,{ease: Power3.easeInOut, opacity:0})
+      TweenMax.to(infosOverlay.interface,1,{ease: Power3.easeInOut, opacity:0})
+      TweenMax.to(infosOverlay.container,1,{ease: Power3.easeInOut, opacity:0})
+    })
+  },
+
+}
+infosOverlay.display()

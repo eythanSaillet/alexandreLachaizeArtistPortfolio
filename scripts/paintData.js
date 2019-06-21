@@ -12,25 +12,150 @@ let Piece = function(title,text,size,srcTabPic) {
    this.currentNumberPic = 1;
 }
 
-let test = new Piece("test titre",
+let rubans = new Piece("Rubans",
 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 "100 x 100",
-["../images/alo-min.jpg","../images/yes-min.jpg","../images/bisous-min.jpg","../images/alo-min.jpg"])
+["../images/wall/paint/Abstraites/00002003_rubans_827x828.jpg"])
 
-let test2 = new Piece("test 2 titre",
+let aquarelle = new Piece("Aquarelle",
 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-"200 x 200",
-["../images/yes-min.jpg","../images/alo-min.jpg","../images/bisous-min.jpg"])
+"100 x 100",
+["../images/wall/paint/Abstraites/00002013_aquarelle_1379x2047.jpg"])
 
-let test3 = new Piece("test 3 titre",
+let aquarelleCellules = new Piece("Aquarelle cellules",
 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-"300 x 300",
-["../images/bisous-min.jpg","../images/yes-min.jpg","../images/bisous-min.jpg"])
+"100 x 100",
+["../images/wall/paint/Abstraites/00002013_aquarellecellules_1529x2048.jpg"])
 
+let aquarelleRubans2 = new Piece("Aquarelle rubans 2",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002013_aquarellerubans2_1936x2592.jpg"])
 
-abstractPaintPiece.push(test,test2,test3,test2,test3,test,test,test3,test2)
-figurativePaintPiece.push(test2,test3,test,test,test2,test2,test3,test2,test)
-paintPiece.push(test,test2,test3,test2,test3,test,test,test3,test2,test2,test3,test,test,test2,test2,test3,test2,test)
+let aquarelleRubansEtCellules = new Piece("Aquarelle rubans et cellules",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002013_aquarellerubansetcellules_2922x4212.jpg"])
+
+let aquarelleRubansEtCellules2 = new Piece("Aquarelle rubans et cellules 2",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002013_aquarellerubansetcellules2_1742x2435.jpg"])
+
+let aquarelleRubansEtCellules3 = new Piece("Aquarelle rubans et cellules 3",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002013_aquarellerubansetcellules3_1603x2299.jpg"])
+
+let aquarelleRubansEtCellules4 = new Piece("Aquarelle rubans et cellules 4",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002013_aquarellerubansetcellules4_1548x2044.jpg"])
+
+let aquarelleRubansEtCellules5 = new Piece("Aquarelle rubans et cellules 5",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002014_aquarellerubansetcellules5_1515x2392.jpg"])
+
+let mixtePapier = new Piece("Mixte papier",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002015_mixtepapier_2174x2923.jpg"])
+
+let strates1 = new Piece("Strates 1",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00012015_strates1-2088x2784.jpg"])
+
+let strates2 = new Piece("Strates 2",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00012015_strates2-1804x2233.jpg"])
+
+let strates3 = new Piece("Strates 3",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002015_strates3-2127x2633.jpg"])
+
+let strates4 = new Piece("Strates 4",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002015_strates4-2122x2690.jpg"])
+
+let diptyque = new Piece("Diptyque",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002016_diptyque_3572x2472.jpg"])
+
+let chuteDesAngesRebelles = new Piece("Chute des anges rebelles",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002017_chutedesangesrebelles_2782x3479.jpg"])
+
+let aquaGouache = new Piece("Aqua gouache",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002018_aquagouache_2580x3805.jpg"])
+
+let aquaGouache2 = new Piece("Aqua gouache 2",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002019_aquagouache_2094x3067.jpg"])
+
+let aquaGouachePapier = new Piece("Aqua gouache papier",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00002018_aquagouachepapier_2636x3836.jpg"])
+
+let portemencroixjbosch = new Piece("portemencroixjbosch",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00112015_portemencroixjbosch_1727x2426.jpg"])
+
+let huileRubans = new Piece("Huile rubans",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Abstraites/00122018_huilerubans_1240x1594.jpg"])
+
+abstractPaintPiece.push(rubans,aquarelle,aquarelleCellules,aquarelleRubans2,aquarelleRubansEtCellules,aquarelleRubansEtCellules2,aquarelleRubansEtCellules3,aquarelleRubansEtCellules4,aquarelleRubansEtCellules5,mixtePapier,strates1,strates2,strates3,strates4,diptyque,chuteDesAngesRebelles,aquaGouache,aquaGouachePapier,aquaGouache2,portemencroixjbosch,huileRubans)
+
+let paysage = new Piece("Paysage",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Figuratives/00002018_paysage_2524x3526.jpg"])
+
+let paysage2 = new Piece("Paysage 2",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Figuratives/00002018_paysage2_2632x3790.jpg"])
+
+let sansTitre = new Piece("Sans titre",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Figuratives/00002014_sanstitre_2189x2889.jpg"])
+
+let sansTitre2 = new Piece("Sans titre 2",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Figuratives/00002014_sanstitre2_4890x6744.jpg"])
+
+let sansTitre3 = new Piece("Sans titre 3",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Figuratives/00002016_sanstitre_2139x2882.jpg"])
+
+let sansTitre4 = new Piece("Sans titre 4",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Figuratives/00002016_sanstitre2_2107x2894.jpg"])
+
+let sansTitre5 = new Piece("Sans titre 5",
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"100 x 100",
+["../images/wall/paint/Figuratives/00002016_sanstitre3_2153x2860.jpg"])
+
+figurativePaintPiece.push(paysage,paysage2,sansTitre,sansTitre2,sansTitre3,sansTitre4,sansTitre5)
+paintPiece.push(rubans,aquarelle,aquarelleCellules,aquarelleRubans2,aquarelleRubansEtCellules,aquarelleRubansEtCellules2,aquarelleRubansEtCellules3,aquarelleRubansEtCellules4,aquarelleRubansEtCellules5,mixtePapier,strates1,strates2,strates3,strates4,diptyque,chuteDesAngesRebelles,aquaGouache,aquaGouachePapier,aquaGouache2,portemencroixjbosch,huileRubans,paysage,paysage2,sansTitre,sansTitre2,sansTitre3,sansTitre4,sansTitre5)
 
 let pieceDisplay = {
 

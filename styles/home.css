@@ -69,13 +69,13 @@ body{
 
 /* HEADER */
 
-.responsiveHeader{
-  display:none;
-}
-
 .header{
   width: 93vw;
   margin: 0 auto;
+  position: fixed;
+  left: 3.5vw;
+  background: #F3F3F3;
+  z-index: 2;
 }
 
 .header_nav{
@@ -97,7 +97,6 @@ body{
   padding: 0.1vw;
   position: relative;
   margin: 0;
-  top:100px;
 }
 .header_nav_menu p:hover{
   cursor: pointer;
@@ -110,7 +109,6 @@ body{
   color: black;
   padding: 0.1vw;
   position: relative;
-  top:100px;
 }
 
 .header_nav_menu{
@@ -128,6 +126,13 @@ body{
   right : -50vw;
 }
 
+.header_underline{
+  height: 1px;
+  width: 93vw;
+  background-color: black;
+  margin-top: 0.2vh;
+}
+
 /* CONTAINER */
 
 .container{
@@ -135,7 +140,7 @@ body{
   align-items: center;
   height: 91%;
   overflow: hidden;
-  visibility: hidden;
+  padding-top: 9.2vh;
 }
 
 /* CONTAINER - SCROLL BAR */
@@ -394,104 +399,29 @@ margin-top: 20vh;
   transform: translateY(1px) rotate(-45deg);
 }
 
-/* RESPONSIVE HEADER */
-
-.responsiveHeader{
-  opacity: 0;
-  width: 93vw;
-  margin: 0 auto;
-  position: fixed;
-  left: 3.5vw;
-  background: #F3F3F3;
-  z-index: 2;
-}
-
-.responsiveHeader_nav{
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  margin-top: 1.3vw;
-}
-
-.responsiveHeader_nav div{
-  height: 3.2vw;
-  overflow: hidden;
-}
-
-.responsiveHeader_nav_menu p{
-  font-family: Abril Fatface;
-  font-size: 1.5vw;
-  color: black;
-  padding: 0.1vw;
-  position: relative;
-  margin: 0;
-}
-.responsiveHeader_nav_menu p:hover{
-  cursor: pointer;
-}
-
-.responsiveHeader_nav a{
-  text-decoration: none;
-  font-family: Abril Fatface;
-  font-size: 1.5vw;
-  color: black;
-  padding: 0.1vw;
-  position: relative;
-}
-
-.responsiveHeader_nav_menu{
-  width: 50vw;
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.responsiveHeader_nav_menu a{
-  position: absolute;
-}
-
-.responsiveHeader_nav_menu a:nth-child(n+2){
-  right : -50vw;
-}
-
-.responsiveHeader_underline{
-  height: 1px;
-  width: 93vw;
-  background-color: black;
-  margin-top: 0.2vh;
-}
-
 /* RESPONSIVE */
 
 @media screen and (max-width: 1000px){
 
   /* HEADER */
 
-  .header{
-    display: none;
-  }
-
-  .responsiveHeader{
-    display: block;
-  }
-
-  .responsiveHeader_nav{
+  .header_nav{
     margin-top: 3vh;
   }
 
-  .responsiveHeader_underline{
+  .header_underline{
     margin-top: 2.5vh;
   }
 
-  .responsiveHeader_nav p{
+  .header_nav p{
     font-size: 3.5vw;
   }
 
-  .responsiveHeader_nav div{
+  .header_nav div{
     height: 5vw;
   }
 
-  .responsiveHeader_nav a{
+  .header_nav a{
     font-size: 3.5vw;
   }
 
@@ -505,7 +435,7 @@ margin-top: 20vh;
     text-align: center;
     width: 100vw;
     margin-left: 0;
-    padding-top: 10vh;
+    margin-top: -5vh;
   }
 
   .container_scrollBar{
