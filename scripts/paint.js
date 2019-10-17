@@ -103,3 +103,53 @@ infosOverlay = {
 
 }
 infosOverlay.display()
+
+disableRellaxOnMobile = {
+  columnAA : document.querySelector('.container_artWallA .container_artWall_columnA'),
+  columnAB : document.querySelector('.container_artWallA .container_artWall_columnB'),
+  columnAC : document.querySelector('.container_artWallA .container_artWall_columnC'),
+
+  columnBA : document.querySelector('.container_artWallB .container_artWall_columnA'),
+  columnBB : document.querySelector('.container_artWallB .container_artWall_columnB'),
+  columnBC : document.querySelector('.container_artWallB .container_artWall_columnC'),
+
+  disable : function(){
+    if(screen.width < 1024){
+      disableRellaxOnMobile.columnAA.classList.remove("rellax")
+      disableRellaxOnMobile.columnAB.classList.remove("rellax")
+      disableRellaxOnMobile.columnAC.classList.remove("rellax")
+
+      disableRellaxOnMobile.columnBA.classList.remove("rellax")
+      disableRellaxOnMobile.columnBB.classList.remove("rellax")
+      disableRellaxOnMobile.columnBC.classList.remove("rellax")
+    }
+  },
+}
+disableRellaxOnMobile.disable()
+
+// let displayInView = {
+//   element : document.querySelectorAll('.container_artWall_pic img'),
+//   container : document.querySelector('.container'),
+//
+//   display : function(){
+//     addEventListener('scroll',function(){
+//       displayInView.element.forEach(function(e){
+//         if (displayInView.inView(e) == true && e.classList.contains("inView") == false){
+//           e.classList.add("inView")
+//           TweenMax.to(e,0.2,{ease: Power3.easeInOut ,opacity:1, y:0})
+//         }
+//       })
+//     })
+//
+//   },
+//
+//   inView : function(item){
+//         if (item.getBoundingClientRect().top <= window.scrollY
+//           && item.getBoundingClientRect().top >= 0) {
+//           return true;
+//         }
+//         return false;
+//       }
+// }
+// displayInView.display()
+//

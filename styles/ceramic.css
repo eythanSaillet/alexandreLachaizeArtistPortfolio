@@ -20,13 +20,6 @@ body::-webkit-scrollbar{
  font-family: 'Bahnschrift';
  src: url("../fonts/Bahnschrift.woff") format("woff");
 }
-@font-face {
-  font-family: 'Abril';
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'),
-       url('../fonts/AbrilFatface-Regular.otf') format('otf'),
-       url('../fonts/abril-fatface-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/abril-fatface-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 
 /* HEADER */
 
@@ -52,7 +45,7 @@ body::-webkit-scrollbar{
 }
 
 .header_nav_menu p{
-  font-family: 'Abril';
+  font-family: 'Abril Fatface', cursive;
   font-size: 1.5vw;
   color: black;
   padding: 0.1vw;
@@ -65,7 +58,7 @@ body::-webkit-scrollbar{
 
 .header_nav a{
   text-decoration: none;
-  font-family: 'Abril';
+  font-family: 'Abril Fatface', cursive;
   font-size: 1.5vw;
   color: black;
   padding: 0.1vw;
@@ -264,9 +257,14 @@ div[class^="artOverlay_nav_arrow"]{
 
 /* ART OVERLAY - INFO */
 
+@media screen and (min-width: 1025px){
+  .artOverlay_info{
+    height: 90vh;
+  }
+}
+
 .artOverlay_info{
   width: 47vw;
-  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -278,16 +276,18 @@ div[class^="artOverlay_nav_arrow"]{
 
 .artOverlay_info_title{
   font-size: 65px;
-  font-family: 'Abril';
+  font-family: 'Abril Fatface', cursive;
   width: 35vw;
 }
 
 .artOverlay_info_text{
   font-size: 17px;
   width: 36vw;
+  display:none;
 }
 
 .artOverlay_info_size{
+  /* display: none; */
   font-size: 35px;
   color: grey;
   margin: 0 0 0 0;
@@ -310,6 +310,7 @@ div[class^="artOverlay_nav_arrow"]{
 .artOverlay_pic_container img{
   max-height: 68vh;
   max-width: 30vw;
+  cursor: zoom-in;
 }
 
 .artOverlay_pic_nav{
@@ -387,11 +388,11 @@ div[class^="artOverlay_nav_arrow"]{
 }
 
 .artOverlay_cancel:hover .artOverlay_cancel_container_up{
-  transform: translateY(1px) rotate(45deg);
+  transform:  translateY(34px) rotate(-45deg);
 }
 
 .artOverlay_cancel:hover .artOverlay_cancel_container_down{
-  transform: translateY(1px) rotate(-45deg);
+  transform:  translateY(-34px) rotate(45deg);
 }
 
 
@@ -427,7 +428,7 @@ div[class^="artOverlay_nav_arrow"]{
 
 .infosOverlay_info_title{
   font-size: 65px;
-  font-family: 'Abril';
+  font-family: 'Abril Fatface', cursive;
   width: 35vw;
 }
 
@@ -536,16 +537,37 @@ div[class^="artOverlay_nav_arrow"]{
 }
 
 .infosOverlay_cancel:hover .infosOverlay_cancel_container_up{
-  transform: translateY(1px) rotate(45deg);
+  transform:  translateY(34px) rotate(-45deg);
 }
 
 .infosOverlay_cancel:hover .infosOverlay_cancel_container_down{
-  transform: translateY(1px) rotate(-45deg);
+  transform:  translateY(-34px) rotate(45deg);
+}
+
+/* ZOMM OVERLAY */
+
+.zoomOverlay{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  opacity: 0;
+  cursor: zoom-out;
+}
+
+.zoomOverlay img{
+  height: 87vh;
 }
 
 
-
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1024px){
 
   /* HEADER */
 
@@ -612,6 +634,146 @@ div[class^="artOverlay_nav_arrow"]{
   }
   div[class^="container_artWall_column"] div img:hover{
     width: 60vw;
+  }
+
+  /* ART OVERLAY */
+
+  .artOverlay{
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  /* ART OVERLAY - NAV */
+
+  .artOverlay_nav{
+    display: none;
+  }
+
+  /* ART OVERLAY - INFO*/
+
+  .artOverlay_info{
+    width:100%;
+    margin: 8vh 0 3vh 0;
+  }
+  .artOverlay_info_bloc{
+    width: 90%;
+  }
+  .artOverlay_info p{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .artOverlay_info_text{
+    display:none;
+  }
+  .artOverlay_info_size{
+    padding: 0;
+    font-size: 5vw;
+  }
+  .artOverlay_info_title{
+    font-size: 10vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* ART OVERLAY - PIC */
+
+  .artOverlay_pic{
+    height: 60vh;
+    padding: 0;
+    justify-content: space-around;
+    width: 80vw;
+  }
+  .artOverlay_pic>div{
+    margin-top: 3vh;
+    width: 80vw;
+  }
+  .artOverlay_pic_container{
+    height: 50vh;
+    max-height: 50vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+  }
+  .artOverlay_pic_container img{
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .artOverlay_pic_nav{
+    max-width: 30vw;
+  }
+  .artOverlay_pic_nav{
+    max-width: 40vw;
+  }
+
+  .artOverlay_pic_nav_numbers{
+    padding: 10px 0 0 0;
+  }
+
+  .artOverlay_pic_nav_numbers span{
+    font-size: 50px;
+  }
+
+  .artOverlay_pic_nav img{
+    width: 50px;
+    height: 50px;
+  }
+
+  /* ART OVERLAY - CANCEL */
+
+  .artOverlay_cancel{
+    position: absolute;
+    right:-1vw;
+    top:0.5vh;
+  }
+
+  /* INFO OVERLAY */
+
+  .infosOverlay{
+    flex-flow: column;
+    align-items: center;
+  }
+  .infosOverlay_info{
+    margin: 0;
+    width: 80vw;
+    height: 46vh;
+  }
+  .infosOverlay_info_bloc{
+    width: 80vw;
+  }
+  .infosOverlay_info_title{
+    margin: 0 !important;
+    width: 80vw;
+    font-size: 15vw;
+  }
+  .infosOverlay_info_text{
+    margin: 2vh 0 0 0!important;
+    width: 80vw;
+    font-size: 3vw;
+  }
+
+  /* INFO OVERLAY - PIC */
+
+  .infosOverlay_pic{
+    width: 80vw;
+    height: 50vh;
+    padding: 0;
+    justify-content: center;
+  }
+  .infosOverlay_pic_container img{
+    height: 40vh;
+    width: auto;
+    max-width: 100%;
+    max-width: 100%;
+  }
+
+  /* INFO OVERLAY - CANCEL */
+
+  .infosOverlay_cancel{
+    position: absolute;
+    right:-1vw;
+    top:0.5vh;
   }
 
 }

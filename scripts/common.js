@@ -8,7 +8,7 @@ let navMenu = {
   animation : function(){
     navMenu.menu.addEventListener('click', function(){
       if (!navMenu.menuOpen) {
-        if (screen.width<1000) {
+        if (screen.width<1024) {
           TweenMax.to(navMenu.menu,0.6,{ease: Power3.easeInOut, right:"41vw"})
           TweenMax.to(navMenu.infos,0.6,{ease: Power3.easeInOut, right:"30vw"})
           TweenMax.to(navMenu.contact,0.6,{ease: Power3.easeInOut, right:"15vw"})
@@ -35,3 +35,15 @@ let navMenu = {
   },
 }
 navMenu.animation()
+
+// console.log(document.querySelector('.artOverlay_pic_container'))
+// document.querySelector('.artOverlay_pic_container').addEventListener('mouseover', function(){
+//   // TweenMax.to(document.querySelector('.artOverlay_pic_container img'),0.4,{ease: Power3.easeInOut, height:"100vh",maxHeight:"100vh",width:"auto",maxWidth:"100vw"})
+//   TweenMax.to(document.querySelector('.artOverlay_pic_container img'),0.4,{ease: Power3.easeInOut, scaleY:1.3})
+//   TweenMax.to(document.querySelector('.artOverlay_pic_container img'),0.4,{ease: Power3.easeInOut, scaleX:1.3})
+// })
+// document.querySelector('.artOverlay_pic_container').addEventListener('mouseout', function(){
+//   // TweenMax.to(document.querySelector('.artOverlay_pic_container img'),0.4,{ease: Power3.easeInOut, height:"auto",maxHeight:"68vh",width:"auto",maxWidth:"30vw"})
+//   TweenMax.to(document.querySelector('.artOverlay_pic_container img'),0.4,{ease: Power3.easeInOut, scaleY:1})
+//   TweenMax.to(document.querySelector('.artOverlay_pic_container img'),0.4,{ease: Power3.easeInOut, scaleX:1})
+// })

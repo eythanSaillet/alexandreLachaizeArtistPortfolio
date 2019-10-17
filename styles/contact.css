@@ -11,13 +11,6 @@ body{
  font-family: 'Bahnschrift';
  src: url("../fonts/Bahnschrift.woff") format("woff");
 }
-@font-face {
-  font-family: 'Abril';
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'),
-       url('../fonts/AbrilFatface-Regular.otf') format('otf'),
-       url('../fonts/abril-fatface-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/abril-fatface-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 
 /* FORM */
 
@@ -33,7 +26,7 @@ p{
   flex-flow: column;
   width: 45vw;
   font-size: 6vw;
-  font-family: 'Abril';
+  font-family: 'Abril Fatface', cursive;
   margin: 0;
   top: 0;
   left: 0;

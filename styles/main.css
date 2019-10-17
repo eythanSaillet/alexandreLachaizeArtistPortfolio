@@ -89,7 +89,7 @@ body{
 }
 
 .header_nav_menu p{
-  font-family: 'Abril';
+  font-family: 'Abril Fatface', cursive;
   font-size: 1.5vw;
   color: black;
   padding: 0.1vw;
@@ -103,7 +103,7 @@ body{
 
 .header_nav a{
   text-decoration: none;
-  font-family: 'Abril';
+  font-family: 'Abril Fatface', cursive;
   font-size: 1.5vw;
   color: black;
   padding: 0.1vw;
@@ -168,7 +168,7 @@ body{
 .container_menu a{
   text-decoration: none;
   color: #808080;
-  font-family: 'Abril';
+  font-family: 'Abril Fatface', cursive;
   font-size: 13vh;
   margin: 2.5vh 0vw 2.5vh 0vw;
 }
@@ -213,6 +213,10 @@ body{
 
 .container_artPic_a{
 margin-top: 20vh;
+}
+
+.container_artPic_other .container_artPic_b{
+  margin-top: 25vh;
 }
 
 .container_artPic_b{
@@ -276,7 +280,7 @@ margin-top: 20vh;
 
 .infosOverlay_info_title{
   font-size: 65px;
-  font-family: 'Abril';
+  font-family: 'Abril Fatface', cursive;
   width: 35vw;
 }
 
@@ -385,12 +389,13 @@ margin-top: 20vh;
 }
 
 .infosOverlay_cancel:hover .infosOverlay_cancel_container_up{
-  transform: translateY(1px) rotate(45deg);
+  transform:  translateY(34px) rotate(-45deg);
 }
 
 .infosOverlay_cancel:hover .infosOverlay_cancel_container_down{
-  transform: translateY(1px) rotate(-45deg);
+  transform:  translateY(-34px) rotate(45deg);
 }
+
 
 /* RESPONSIVE HEADER */
 
@@ -417,7 +422,7 @@ margin-top: 20vh;
 }
 
 .responsiveHeader_nav_menu p{
-  font-family: 'Abril';
+  font-family: 'Abril Fatface', cursive;
   font-size: 1.5vw;
   color: black;
   padding: 0.1vw;
@@ -430,7 +435,7 @@ margin-top: 20vh;
 
 .responsiveHeader_nav a{
   text-decoration: none;
-  font-family: 'Abril';
+  font-family: 'Abril Fatface', cursive;
   font-size: 1.5vw;
   color: black;
   padding: 0.1vw;
@@ -461,7 +466,11 @@ margin-top: 20vh;
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1024px){
+
+  body{
+    overflow: hidden;
+  }
 
   /* HEADER */
 
@@ -513,6 +522,54 @@ margin-top: 20vh;
   .container_menu a{
     font-size: 15vw;
     color: black;
+  }
+
+  /* INFO OVERLAY */
+
+  .infosOverlay{
+    flex-flow: column;
+    align-items: center;
+  }
+  .infosOverlay_info{
+    margin: 0;
+    width: 80vw;
+    height: 46vh;
+  }
+  .infosOverlay_info_bloc{
+    width: 80vw;
+  }
+  .infosOverlay_info_title{
+    margin: 0 !important;
+    width: 80vw;
+    font-size: 15vw;
+  }
+  .infosOverlay_info_text{
+    margin: 2vh 0 0 0!important;
+    width: 80vw;
+    font-size: 3vw;
+  }
+
+  /* INFO OVERLAY - PIC */
+
+  .infosOverlay_pic{
+    width: 80vw;
+    height: 50vh;
+    padding: 0;
+    justify-content: center;
+  }
+  .infosOverlay_pic_container img{
+    height: 40vh;
+    width: auto;
+    max-width: 100%;
+    max-width: 100%;
+  }
+
+  /* INFO OVERLAY - CANCEL */
+
+  .infosOverlay_cancel{
+    position: absolute;
+    right:-1vw;
+    top:0.5vh;
   }
 
 }
